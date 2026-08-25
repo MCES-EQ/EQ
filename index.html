@@ -66,10 +66,10 @@
 <section class="section" id="training-form" style="padding-top:20px"><div class="wrap"><div class="eyebrow">TRAINING REGISTRATION</div><h2>志工培訓報名</h2><p class="lead">準備好參與培訓了嗎？可以直接在這裡完成表單。</p><div class="trainingEmbed"><div class="trainingEmbedHead"><div><h3>🌱 EQ 新進／舊有志工培訓報名表</h3><p>送出表單後，再回到「EQ 好朋友」群組留意培訓與後續通知即可。</p></div></div><div class="trainingFrameWrap"><iframe class="trainingFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSfhvUz8RLU-AQyVmRdTyckbaDUwpH-QN31TalcbUfIiBZ2A6g/viewform?embedded=true" title="EQ 志工培訓報名表" loading="lazy">載入中…</iframe></div><div class="trainingHint">若表單在部分瀏覽器中載入較慢，稍等幾秒即可看到完整內容。</div></div></div></section>
 <section class="section" id="portal"><div class="wrap"><div class="eyebrow">MEMBER PORTAL</div><h2>志工／老師專區</h2><p class="lead"></p><div class="secure"><div class="portalHead"><h3>🔐 志工專區</h3><span class="badge">夥伴限定</span></div><p>此區提供已完成培訓、加入正式 EQ 志工群組的夥伴使用。可查看雲端班表與登記可支援的入班時段。</p><div class="lockform"><input id="volPwd" type="password" placeholder="輸入志工密碼" autocomplete="off"><button onclick="unlock('vol')">進入專區</button></div><div id="volArea" class="lockedContent">
 <div class="volDash">
-  <div class="dashTop"><div><h4>📱 EQ 行動班表</h4><div class="supportHint">快速看入班、備課與支援狀況；督導原班表內容維持唯讀。</div></div><span class="semesterBadge">114 下</span></div>
+  <div class="dashTop"><div><h4>📱 EQ 行動班表</h4><div class="supportHint">快速查看這學期的入班、備課與支援狀況。</div></div><span class="semesterBadge">115 上</span></div>
   <div class="dashStats"><div class="dashStat"><b id="needCount">—</b><span>目前需要支援</span></div><div class="dashStat"><b id="okCount">—</b><span>支援已足夠</span></div><div class="dashStat"><b id="prepCount">—</b><span>備課場次</span></div></div>
   <div class="dashTabs"><button class="dashTab active" data-view="class">🏫 入班班表</button><button class="dashTab" data-view="prep">🗓️ 備課行程</button><a class="dashTab" href="https://docs.google.com/spreadsheets/d/15b6Ximi0_dSC8yaNMzyVRZhM4OvJgUNaH1unGUiV9KI/edit?usp=sharing" target="_blank">原始班表 ↗</a></div>
-  <div id="classView"><div class="monthToolbar"><button class="monthNav" id="prevMonth" type="button">‹ 上個月</button><div class="monthTitle" id="monthTitle">—</div><button class="monthNav" id="nextMonth" type="button">下個月 ›</button></div><div class="quickMonthFilters" id="gradeQuick"><button class="active" data-grade="all">全部年級</button><button data-grade="1">一年級</button><button data-grade="2">二年級</button><button data-grade="3">三年級</button><button data-grade="4">四年級</button><button data-grade="5">五年級</button></div><div class="quickMonthFilters" id="statusQuick"><button class="active" data-status="all">全部</button><button data-status="need">需要支援</button><button data-status="nice">再一位更安心</button><button data-status="enough">已有人支援</button></div><div id="scheduleList" class="scheduleList"></div></div>
+  <div id="classView"><div class="monthToolbar"><button class="monthNav" id="prevMonth" type="button">‹ 上個月</button><div class="monthTitle" id="monthTitle">—</div><button class="monthNav" id="nextMonth" type="button">下個月 ›</button></div><div class="quickMonthFilters" id="gradeQuick"><button class="active" data-grade="all">全部年級</button><button data-grade="1">一年級</button><button data-grade="2">二年級</button><button data-grade="3">三年級</button><button data-grade="4">四年級</button><button data-grade="5">五年級</button><button data-grade="6">六年級</button></div><div class="quickMonthFilters" id="statusQuick"><button class="active" data-status="all">全部</button><button data-status="need">需要支援</button><button data-status="nice">再一位更安心</button><button data-status="enough">已有人支援</button></div><div id="scheduleList" class="scheduleList"></div></div>
   <div id="prepView" style="display:none"><div id="prepList" class="scheduleList" style="margin-top:12px"></div></div>
   <div class="dashFoot">＊低年級同時段多班可視現場需要輪流跑班；中高年級若非雙主講，盡量每班安排 1 位支援，有 2 位會更安心。<br></div>
 </div></div></div><div class="secure"><div class="portalHead"><h3>🔐 老師專區</h3><span class="badge">教師限定</span></div><p>填寫班級是否希望安排 EQ 志工入班。</p><div class="lockform"><input id="teacherPwd" type="password" placeholder="輸入老師密碼" autocomplete="off"><button onclick="unlock('teacher')">進入專區</button></div><div id="teacherArea" class="lockedContent"><div class="portalGrid"><a class="portalLink" href="https://docs.google.com/forms/d/e/1FAIpQLSeqiM80X17ZZjLDSGHGyIQtb0C_dG9q3N-nhVlE8qAztH9E3g/viewform" target="_blank"><b>🏫 填寫 EQ 入班意願調查</b><span>開啟教師專用 Google 問卷 →</span></a><div class="portalLink"><b>📌 後續可加入</b><span>主講分配、班級狀態與重要公告，都能整理成手機友善卡片。</span></div></div></div></div></div></section>
@@ -79,31 +79,129 @@
 <footer class="footer"><div class="wrap">台北市民族國小志工團 EQ 組｜情緒教育推廣合作：社團法人臺灣芯福里情緒教育推廣協會</div></footer>
 
 <script>
-function unlock(type){const isVol=type==='vol';const input=document.getElementById(isVol?'volPwd':'teacherPwd');const area=document.getElementById(isVol?'volArea':'teacherArea');const ok=isVol?input.value==='EQ':input.value==='teacher';if(ok){area.classList.add('show');input.value='';input.placeholder='✓ 已解鎖';input.disabled=true;if(isVol) renderVolunteerDash();}else{input.value='';input.placeholder='密碼不正確，請再試一次';input.focus();}}
+function unlock(type){const isVol=type==='vol';const input=document.getElementById(isVol?'volPwd':'teacherPwd');const area=document.getElementById(isVol?'volArea':'teacherArea');const ok=isVol?input.value==='EQ':input.value==='teacher';if(ok){area.classList.add('show');input.value='';input.placeholder='✓ 已解鎖';input.disabled=true;if(isVol){renderVolunteerDash();loadRemoteData();}}else{input.value='';input.placeholder='密碼不正確，請再試一次';input.focus();}}
 document.querySelectorAll('input[type=password]').forEach(i=>i.addEventListener('keydown',e=>{if(e.key==='Enter') unlock(i.id==='volPwd'?'vol':'teacher')}));
 
-// 部署 Apps Script 後，把網址貼在這裡。留白時會使用 114 下的預覽資料。
-const EQ_API_URL='https://script.google.com/macros/s/AKfycbxJnt1dU_O9r9rGrghYgZ3oJUI4Jrq_pWEMIiyrjRXGLjga6v2GSVb2KvN91X47AzMSqA/exec';
+// 115上班表 API。若連線暫時失敗，會先顯示內建的 115 上班表資料。
+const EXPECTED_SEMESTER='115 上';
+const EQ_API_URL='https://script.google.com/macros/s/AKfycbzxgAOY6tTzP0F0jJ19GBmAXlPRCKIl1KUp2gNZ1IescQBTRiG3AHffqWHTLJi-2Aml/exec';
 let activeSupport=null;
+let apiSemesterVerified=false;
 const classRows=[
-{sheet:'(一下)我是心情魔法師',row:3,grade:1,cls:'101',unit:'第1~2課',date:'2026/03/10',day:'二',time:'13:20~14:50',main:['游佳蓉'],support:[]},
-{sheet:'(一下)我是心情魔法師',row:4,grade:1,cls:'101',unit:'第3~4課',date:'2026/05/05',day:'二',time:'14:10~15:50',main:['游佳蓉'],support:['侯怡芸']},
-{sheet:'(一下)我是心情魔法師',row:9,grade:1,cls:'103',unit:'第1~2課',date:'2026/03/10',day:'二',time:'13:20~14:50',main:['張齡之'],support:[]},
-{sheet:'(二下)我是幸福魔法師',row:3,grade:2,cls:'201',unit:'第1~2課',date:'2026/05/05',day:'二',time:'14:10~15:50',main:['史晴腕'],support:[]},
-{sheet:'(二下)我是幸福魔法師',row:12,grade:2,cls:'204',unit:'第1~2課',date:'2026/03/31',day:'二',time:'14:10~15:50',main:['鄭雅禎','羅茂玲'],support:[]},
-{sheet:'(三下)好人氣養成班',row:9,grade:3,cls:'305',unit:'第1~2課',date:'2026/03/19',day:'四',time:'13:20~14:50',main:['張容碩'],support:[]},
-{sheet:'(三下)好人氣養成班',row:11,grade:3,cls:'305',unit:'第5~6課',date:'2026/06/25',day:'四',time:'13:20~14:50',main:['張容碩'],support:['歐亭鎔']},
-{sheet:'(四下)超人氣養成班',row:3,grade:4,cls:'401',unit:'第1~2課',date:'2026/03/19',day:'四',time:'13:20~14:50',main:['葉怡君'],support:[]},
-{sheet:'(四下)超人氣養成班',row:12,grade:4,cls:'406',unit:'第1~2課',date:'2026/03/12',day:'四',time:'13:20~14:50',main:['張容碩'],support:['劉芷伶','黃婉婷']},
-{sheet:'(五下)我真的很不錯',row:7,grade:5,cls:'502',unit:'二',date:'2026/04/13',day:'一',time:'13:20~14:50',main:['黃婉婷','張慧芳'],support:['鄭雅禎']},
-{sheet:'(五下)我真的很不錯',row:11,grade:5,cls:'504',unit:'一',date:'2026/03/23',day:'一',time:'13:20~14:50',main:['郭曉鈴'],support:[]}
+{sheet:"(一上)我是心情魔法師",row:3,grade:1,cls:"101",unit:"第1~2課",date:"2026/10/06",day:"二",time:"13:20~14:50",main:["鄭雅禎"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:4,grade:1,cls:"101",unit:"第3~4課",date:"2026/11/03",day:"二",time:"13:20~14:50",main:["鄭雅禎"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:5,grade:1,cls:"101",unit:"第5~6課",date:"2027/01/19",day:"二",time:"13:20~14:50",main:["鄭雅禎"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:6,grade:1,cls:"102",unit:"第1~2課",date:"2026/10/06",day:"二",time:"13:20~14:50",main:["羅茂玲"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:7,grade:1,cls:"102",unit:"第3~4課",date:"2026/11/03",day:"二",time:"13:20~14:50",main:["羅茂玲"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:8,grade:1,cls:"102",unit:"第5~6課",date:"2027/01/19",day:"二",time:"13:20~14:50",main:["羅茂玲"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:9,grade:1,cls:"103",unit:"第1~2課",date:"2026/10/06",day:"二",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:10,grade:1,cls:"103",unit:"第3~4課",date:"2026/11/03",day:"二",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(一上)我是心情魔法師",row:11,grade:1,cls:"103",unit:"第5~6課",date:"2027/01/19",day:"二",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(二上)我是幸福魔法師",row:3,grade:2,cls:"201",unit:"第1~2課",date:"2026/09/22",day:"二",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:4,grade:2,cls:"201",unit:"第3~4課",date:"2026/11/17",day:"二",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:5,grade:2,cls:"201",unit:"第5~6課",date:"2027/01/12",day:"二",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:6,grade:2,cls:"202",unit:"第1~2課",date:"2026/09/22",day:"二",time:"13:20~14:50",main:["許芸蓁"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:7,grade:2,cls:"202",unit:"第3~4課",date:"2026/11/17",day:"二",time:"13:20~14:50",main:["許芸蓁"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:8,grade:2,cls:"202",unit:"第5~6課",date:"2027/01/12",day:"二",time:"13:20~14:50",main:["許芸蓁"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:9,grade:2,cls:"203",unit:"第1~2課",date:"2026/09/22",day:"二",time:"13:20~14:50",main:["張齡之"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:10,grade:2,cls:"203",unit:"第3~4課",date:"2026/11/17",day:"二",time:"13:20~14:50",main:["張齡之"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:11,grade:2,cls:"203",unit:"第5~6課",date:"2027/01/12",day:"二",time:"13:20~14:50",main:["張齡之"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:12,grade:2,cls:"204",unit:"第1~2課",date:"2026/09/22",day:"二",time:"13:20~14:50",main:["吳雅惠", "張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:13,grade:2,cls:"204",unit:"第3~4課",date:"2026/11/17",day:"二",time:"13:20~14:50",main:["吳雅惠", "張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(二上)我是幸福魔法師",row:14,grade:2,cls:"204",unit:"第5~6課",date:"2027/01/12",day:"二",time:"13:20~14:50",main:["吳雅惠", "張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(三上)好人氣養成班",row:3,grade:3,cls:"301",unit:"第1~2課",date:"2026/09/10",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:4,grade:3,cls:"301",unit:"第3~4課",date:"2026/10/15",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:5,grade:3,cls:"301",unit:"第5~6課",date:"2026/12/10",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:6,grade:3,cls:"302",unit:"第1~2課",date:"2026/09/03",day:"四",time:"13:20~14:50",main:["(鄭雅禎)", "(張齡之)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:7,grade:3,cls:"302",unit:"第3~4課",date:"2026/10/01",day:"四",time:"13:20~14:50",main:["(鄭雅禎)", "(張齡之)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:8,grade:3,cls:"302",unit:"第5~6課",date:"2026/11/05",day:"四",time:"13:20~14:50",main:["(鄭雅禎)", "(張齡之)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:9,grade:3,cls:"303",unit:"第1~2課",date:"2026/09/03",day:"四",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:10,grade:3,cls:"303",unit:"第3~4課",date:"2026/10/01",day:"四",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:11,grade:3,cls:"303",unit:"第5~6課",date:"2026/11/05",day:"四",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:12,grade:3,cls:"304",unit:"第1~2課",date:"2026/09/03",day:"四",time:"13:20~14:50",main:["(羅茂玲)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:13,grade:3,cls:"304",unit:"第3~4課",date:"2026/10/01",day:"四",time:"13:20~14:50",main:["(羅茂玲)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:14,grade:3,cls:"304",unit:"第5~6課",date:"2026/11/05",day:"四",time:"13:20~14:50",main:["(羅茂玲)"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:15,grade:3,cls:"305",unit:"第1~2課",date:"2026/09/03",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:16,grade:3,cls:"305",unit:"第3~4課",date:"2026/10/01",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:17,grade:3,cls:"305",unit:"第5~6課",date:"2026/11/05",day:"四",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:18,grade:3,cls:"306",unit:"第1~2課",date:"2026/09/03",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:19,grade:3,cls:"306",unit:"第3~4課",date:"2026/10/01",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(三上)好人氣養成班",row:20,grade:3,cls:"306",unit:"第5~6課",date:"2026/11/05",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:3,grade:4,cls:"401",unit:"第1~2課",date:"2026/09/24",day:"四",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:4,grade:4,cls:"401",unit:"第3~4課",date:"2026/12/17",day:"四",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:5,grade:4,cls:"401",unit:"第5~6課",date:"2027/01/14",day:"四",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:6,grade:4,cls:"402",unit:"第1~2課",date:"2026/09/24",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:7,grade:4,cls:"402",unit:"第3~4課",date:"2026/12/17",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:8,grade:4,cls:"402",unit:"第5~6課",date:"2027/01/14",day:"四",time:"13:20~14:50",main:["史晴腕"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(四上)超人氣養成班",row:9,grade:4,cls:"405",unit:"第1~2課",date:"2026/09/24",day:"四",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(四上)超人氣養成班",row:10,grade:4,cls:"405",unit:"第3~4課",date:"2026/12/17",day:"四",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(四上)超人氣養成班",row:11,grade:4,cls:"405",unit:"第5~6課",date:"2027/01/14",day:"四",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(五上)我是EQ高手",row:3,grade:5,cls:"501",unit:"一",date:"2026/09/07",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:4,grade:5,cls:"501",unit:"二",date:"2026/10/12",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:5,grade:5,cls:"501",unit:"三",date:"2026/12/14",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:6,grade:5,cls:"501",unit:"四",date:"2027/01/11",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:7,grade:5,cls:"502",unit:"一",date:"2026/09/07",day:"一",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:8,grade:5,cls:"502",unit:"二",date:"2026/10/12",day:"一",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:9,grade:5,cls:"502",unit:"三",date:"2026/12/14",day:"一",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:10,grade:5,cls:"502",unit:"四",date:"2027/01/11",day:"一",time:"13:20~14:50",main:["游佳蓉"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:11,grade:5,cls:"504",unit:"一",date:"2026/09/11",day:"五",time:"10:30~12:00",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:12,grade:5,cls:"504",unit:"二",date:"2026/10/16",day:"五",time:"10:30~12:00",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:13,grade:5,cls:"504",unit:"三",date:"2026/12/18",day:"五",time:"10:30~12:00",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:14,grade:5,cls:"504",unit:"四",date:"2027/01/15",day:"五",time:"10:30~12:00",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:15,grade:5,cls:"505",unit:"一",date:"2026/09/07",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:16,grade:5,cls:"505",unit:"二",date:"2026/10/12",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:17,grade:5,cls:"505",unit:"三",date:"2026/12/14",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:18,grade:5,cls:"505",unit:"四",date:"2027/01/11",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:19,grade:5,cls:"506",unit:"一",date:"2026/09/11",day:"五",time:"10:30~12:00",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:20,grade:5,cls:"506",unit:"二",date:"2026/10/16",day:"五",time:"10:30~12:00",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:21,grade:5,cls:"506",unit:"三",date:"2026/12/18",day:"五",time:"10:30~12:00",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:22,grade:5,cls:"506",unit:"四",date:"2027/01/15",day:"五",time:"10:30~12:00",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:23,grade:5,cls:"507",unit:"一",date:"2026/09/07",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:24,grade:5,cls:"507",unit:"二",date:"2026/10/12",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:25,grade:5,cls:"507",unit:"三",date:"2026/12/14",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(五上)我是EQ高手",row:26,grade:5,cls:"507",unit:"四",date:"2027/01/11",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:3,grade:6,cls:"601",unit:"一",date:"2026/09/14",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:4,grade:6,cls:"601",unit:"二",date:"2026/11/09",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:5,grade:6,cls:"601",unit:"三",date:"2026/12/07",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:6,grade:6,cls:"601",unit:"四",date:"2027/01/04",day:"一",time:"13:20~14:50",main:["葉怡君"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:7,grade:6,cls:"602",unit:"一",date:"2026/09/14",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:8,grade:6,cls:"602",unit:"二",date:"2026/11/09",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:9,grade:6,cls:"602",unit:"三",date:"2026/12/07",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:10,grade:6,cls:"602",unit:"四",date:"2027/01/04",day:"一",time:"13:20~14:50",main:["黃婉婷"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:11,grade:6,cls:"603",unit:"一",date:"2026/09/07",day:"一",time:"13:20~14:50",main:["林守涵", "張慧芳"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:12,grade:6,cls:"603",unit:"二",date:"2026/09/21",day:"一",time:"13:20~14:50",main:["林守涵", "張慧芳"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:13,grade:6,cls:"603",unit:"三",date:"2026/10/05",day:"一",time:"13:20~14:50",main:["林守涵", "張慧芳"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:14,grade:6,cls:"603",unit:"四",date:"2026/12/21",day:"一",time:"13:20~14:50",main:["林守涵", "張慧芳"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:15,grade:6,cls:"604",unit:"一",date:"2026/09/14",day:"一",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:16,grade:6,cls:"604",unit:"二",date:"2026/11/09",day:"一",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:17,grade:6,cls:"604",unit:"三",date:"2026/12/07",day:"一",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:18,grade:6,cls:"604",unit:"四",date:"2027/01/04",day:"一",time:"13:20~14:50",main:["張慧芳"],support:[],note:"(請本班學生家長不要入班)"},
+{sheet:"(六上)我好你也好",row:19,grade:6,cls:"605",unit:"一",date:"2026/09/14",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:20,grade:6,cls:"605",unit:"二",date:"2026/11/09",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:21,grade:6,cls:"605",unit:"三",date:"2026/12/07",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"},
+{sheet:"(六上)我好你也好",row:22,grade:6,cls:"605",unit:"四",date:"2027/01/04",day:"一",time:"13:20~14:50",main:["張容碩"],support:[],note:"(本班學生家長可以入班)"}
 ];
 const prepRows=[
-{grade:'五年級',date:'2026/03/11',day:'三',time:'9:00~12:00',content:'SC(一)',people:'郭曉鈴、黃婉婷、張慧芳、張容碩'},
-{grade:'四年級',date:'2026/03/26',day:'四',time:'9:30~12:00',content:'超人氣養成班(下) 3、4',people:'葉怡君、黃婉婷、張慧芳、張容碩'},
-{grade:'三年級',date:'2026/05/15',day:'五',time:'9:30~12:00',content:'好人氣養成班(下) 3、4',people:'葉怡君、黃婉婷、史晴腕、張容碩'},
-{grade:'二年級',date:'2026/05/08',day:'五',time:'10:00~12:00',content:'我是幸福魔法師(下) 3、4',people:'葉怡君、史晴腕、張齡之、游佳蓉、羅茂玲、鄭雅禎'},
-{grade:'一年級',date:'2026/06/17',day:'三',time:'10:00~12:00',content:'我是心情魔法師(下) 5、6',people:'葉怡君、游佳蓉、吳雅惠、張容碩、羅茂玲'}
+{grade:"六年級",date:"2026/09/04",day:"五",time:"9:00~12:00",content:"PAC(一)",people:["葉怡君", "黃婉婷", "張慧芳", "張容碩", "林守涵"],helpers:["張齡之"],note:""},
+{grade:"六年級",date:"2026/09/17",day:"四",time:"9:00~12:00",content:"PAC(二)",people:["葉怡君", "黃婉婷", "張慧芳", "張容碩", "林守涵"],helpers:[],note:""},
+{grade:"六年級",date:"2026/10/02",day:"五",time:"9:00~12:00",content:"PAC(三)",people:["葉怡君", "黃婉婷", "張慧芳", "張容碩", "林守涵"],helpers:[],note:""},
+{grade:"六年級",date:"2026/12/16",day:"三",time:"9:00~12:00",content:"PAC(四)",people:["葉怡君", "黃婉婷", "張慧芳", "張容碩", "林守涵"],helpers:[],note:""},
+{grade:"五年級",date:"2026/09/02",day:"三",time:"9:00~12:00",content:"RET(一)",people:["葉怡君", "黃婉婷", "張容碩", "游佳蓉"],helpers:["張齡之", "陳怡蓉"],note:""},
+{grade:"五年級",date:"2026/10/07",day:"三",time:"9:00~12:00",content:"RET(二)",people:["葉怡君", "黃婉婷", "張容碩", "游佳蓉"],helpers:[],note:""},
+{grade:"五年級",date:"2026/12/11",day:"五",time:"9:00~12:00",content:"RET(三)",people:["葉怡君", "黃婉婷", "張容碩", "游佳蓉"],helpers:[],note:""},
+{grade:"五年級",date:"2027/01/07",day:"四",time:"9:00~12:00",content:"RET(四)",people:["葉怡君", "黃婉婷", "張容碩", "游佳蓉"],helpers:[],note:""},
+{grade:"四年級",date:"2026/09/18",day:"五",time:"9:30~12:00",content:"超人氣養成班(上) 1、2",people:["葉怡君", "黃婉婷", "史晴腕", "張容碩"],helpers:[],note:""},
+{grade:"四年級",date:"2026/12/09",day:"三",time:"9:30~12:00",content:"超人氣養成班(上) 3、4",people:["葉怡君", "黃婉婷", "史晴腕", "張容碩"],helpers:[],note:""},
+{grade:"四年級",date:"2027/01/06",day:"三",time:"9:30~12:00",content:"超人氣養成班(上) 5、6",people:["葉怡君", "黃婉婷", "史晴腕", "張容碩"],helpers:[],note:""},
+{grade:"三年級",date:"2026/08/31",day:"一",time:"9:30~12:00",content:"好人氣養成班(上) 1、2",people:["葉怡君", "張慧芳", "史晴腕"],helpers:["羅茂玲", "鄭雅禎"],note:""},
+{grade:"三年級",date:"2026/09/22",day:"二",time:"9:30~12:00",content:"好人氣養成班(上) 3、4",people:["葉怡君", "張慧芳", "史晴腕"],helpers:[],note:""},
+{grade:"三年級",date:"2026/10/29",day:"四",time:"9:30~12:00",content:"好人氣養成班(上) 5、6",people:["葉怡君", "張慧芳", "史晴腕"],helpers:[],note:""},
+{grade:"二年級",date:"2026/09/15",day:"二",time:"10:00~12:00",content:"我是幸福魔法師(上) 1、2",people:["葉怡君", "游佳蓉", "許芸蓁", "張齡之", "吳雅惠"],helpers:[],note:"容碩不用備課"},
+{grade:"二年級",date:"2026/11/13",day:"五",time:"10:00~12:00",content:"我是幸福魔法師(上) 3、4",people:["葉怡君", "游佳蓉", "許芸蓁", "張齡之", "吳雅惠"],helpers:[],note:"容碩不用備課"},
+{grade:"二年級",date:"2027/01/08",day:"五",time:"10:00~12:00",content:"我是幸福魔法師(上) 5、6",people:["葉怡君", "游佳蓉", "許芸蓁", "張齡之", "吳雅惠"],helpers:[],note:"容碩不用備課"},
+{grade:"一年級",date:"2026/09/29",day:"二",time:"10:00~12:00",content:"我是心情魔法師(上) 1、2",people:["葉怡君", "鄭雅禎", "羅茂玲"],helpers:["戴郁芳"],note:""},
+{grade:"一年級",date:"2026/10/27",day:"二",time:"10:00~12:00",content:"我是心情魔法師(上) 3、4",people:["葉怡君", "鄭雅禎", "羅茂玲"],helpers:[],note:""},
+{grade:"一年級",date:"2027/01/13",day:"三",time:"10:00~12:00",content:"我是心情魔法師(上) 5、6",people:["葉怡君", "鄭雅禎", "羅茂玲"],helpers:[],note:""}
 ];
 let dashClasses=classRows, dashPrep=prepRows;
 let activeMonth=null, selectedGrade='all', selectedStatus='all';
@@ -117,7 +215,8 @@ function renderVolunteerDash(){ensureActiveMonth();renderClassList();renderPrepL
 function changeMonth(delta){ensureActiveMonth();activeMonth=new Date(activeMonth.getFullYear(),activeMonth.getMonth()+delta,1);renderClassList();}
 function stateMatches(r){const k=supportState(r).k;if(selectedStatus==='all')return true;if(selectedStatus==='enough')return k==='enough'||k==='dual';return k===selectedStatus;}
 function renderClassList(){ensureActiveMonth();const mk=monthKey(activeMonth);document.getElementById('monthTitle').textContent=`${activeMonth.getFullYear()} 年 ${activeMonth.getMonth()+1} 月`;const list=dashClasses.filter(r=>monthKey(parseDate(r.date))===mk&&(selectedGrade==='all'||String(r.grade)===selectedGrade)&&stateMatches(r)).sort((a,b)=>parseDate(a.date)-parseDate(b.date)||a.time.localeCompare(b.time)||a.cls.localeCompare(b.cls));const el=document.getElementById('scheduleList');if(!el)return;el.innerHTML=list.length?list.map(r=>{const p=dateParts(r.date),state=supportState(r),low=r.grade<=2&&dashClasses.filter(x=>x.grade===r.grade&&x.date===r.date&&x.time===r.time).length>1;return `<div class="scheduleCard"><div class="scheduleHead"><div class="dateBox"><div class="m">${p.m} 月</div><div class="d">${p.d}</div><div class="m">週${r.day}</div></div><div class="scheduleMain"><h5>${r.cls}｜${r.unit}</h5><div class="scheduleMeta">${r.grade} 年級・${r.time}</div></div><span class="statusPill ${state.k}">${state.t}</span></div><div class="scheduleBody"><div class="peopleLine"><b>主講：</b>${r.main.join('、')}</div><div><b>支援：</b><span class="supportNames">${r.support.length?r.support.map(n=>`<span class="nameChip">${n}</span>`).join(''):'尚未登記'}</span></div>${low?'<div class="lowGradeNote">🌱 這個時段有多班同時進行，低年級支援可依現場需要輪流跑班。</div>':''}</div><div class="supportAction"><button onclick="openSupportModal('${r.sheet}',${r.row})">＋ 我可以支援</button><span class="supportHint"></span></div></div>`}).join(''):'<div class="dashEmpty">這個月份／條件目前沒有入班 🌿</div>';}
-function renderPrepList(){const el=document.getElementById('prepList');if(!el)return;el.innerHTML=dashPrep.map(r=>{const p=dateParts(r.date);return `<div class="prepCard"><div class="dateBox"><div class="m">${p.m} 月</div><div class="d">${p.d}</div><div class="m">週${r.day}</div></div><div><h5>${r.grade}｜${r.content}</h5><p>${r.time}</p><p><b>備課夥伴：</b>${r.people}</p></div></div>`}).join('');}
+function renderPrepList(){const el=document.getElementById('prepList');if(!el)return;const rows=[...dashPrep].sort((a,b)=>parseDate(a.date)-parseDate(b.date));el.innerHTML=rows.map(r=>{const p=dateParts(r.date),people=Array.isArray(r.people)?r.people.join('、'):r.people,helpers=Array.isArray(r.helpers)?r.helpers.join('、'):(r.helpers||'');return `<div class="prepCard"><div class="dateBox"><div class="m">${p.m} 月</div><div class="d">${p.d}</div><div class="m">週${r.day}</div></div><div><h5>${r.grade}｜${r.content}</h5><p>${r.time}</p><p><b>備課夥伴：</b>${people||'—'}</p>${helpers?`<p><b>協助／旁聽：</b>${helpers}</p>`:''}${r.note?`<p><b>備註：</b>${r.note}</p>`:''}</div></div>`}).join('');}
+async function loadRemoteData(){if(!EQ_API_URL)return;try{const res=await fetch(`${EQ_API_URL}?action=data&_=${Date.now()}`,{cache:'no-store'});if(!res.ok)throw new Error('network');const data=await res.json();if(!data.ok||data.semester!==EXPECTED_SEMESTER){apiSemesterVerified=false;console.warn('EQ API 尚未切換至 115 上，暫用內建班表');return;}dashClasses=Array.isArray(data.classes)?data.classes:classRows;dashPrep=Array.isArray(data.prep)?data.prep:prepRows;apiSemesterVerified=true;activeMonth=null;const badge=document.querySelector('.semesterBadge');if(badge)badge.textContent=data.semester;renderVolunteerDash();}catch(e){apiSemesterVerified=false;console.warn('EQ 班表連線失敗，暫用內建資料',e);}}
 document.getElementById('prevMonth')?.addEventListener('click',()=>changeMonth(-1));
 document.getElementById('nextMonth')?.addEventListener('click',()=>changeMonth(1));
 document.getElementById('gradeQuick')?.addEventListener('click',e=>{const b=e.target.closest('button[data-grade]');if(!b)return;selectedGrade=b.dataset.grade;document.querySelectorAll('#gradeQuick button').forEach(x=>x.classList.toggle('active',x===b));renderClassList();});
@@ -125,6 +224,6 @@ document.getElementById('statusQuick')?.addEventListener('click',e=>{const b=e.t
 document.querySelectorAll('.dashTab[data-view]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.dashTab[data-view]').forEach(x=>x.classList.remove('active'));b.classList.add('active');const cls=b.dataset.view==='class';document.getElementById('classView').style.display=cls?'block':'none';document.getElementById('prepView').style.display=cls?'none':'block';}));
 function openSupportModal(sheet,row){activeSupport=dashClasses.find(r=>r.sheet===sheet&&r.row===row);if(!activeSupport)return;document.getElementById('modalClassInfo').textContent=`${activeSupport.cls}｜${activeSupport.unit}｜${activeSupport.date} ${activeSupport.time}`;document.getElementById('supportName').value=localStorage.getItem('eqVolunteerName')||'';document.getElementById('supportModal').classList.add('show');}
 function closeSupportModal(){document.getElementById('supportModal').classList.remove('show');activeSupport=null;}
-async function submitSupport(){if(!activeSupport)return;const name=document.getElementById('supportName').value.trim(),note=document.getElementById('supportNote').value.trim();if(!name){alert('請先輸入姓名喔！');return;}localStorage.setItem('eqVolunteerName',name);if(!EQ_API_URL){alert('這是版面預覽：支援登記介面已完成。下一步接上 Apps Script 後，就會只把姓名寫入這一列的「協助1～3」欄位，不碰督導其他班表內容。');closeSupportModal();return;}try{const form=document.createElement('form');form.method='POST';form.action=EQ_API_URL;form.target='eqSubmitFrame';form.style.display='none';[['action','signup'],['sheet',activeSupport.sheet],['row',activeSupport.row],['name',name],['note',note]].forEach(([k,v])=>{const i=document.createElement('input');i.name=k;i.value=v;form.appendChild(i)});let frame=document.getElementById('eqSubmitFrame');if(!frame){frame=document.createElement('iframe');frame.name='eqSubmitFrame';frame.id='eqSubmitFrame';frame.style.display='none';document.body.appendChild(frame)}document.body.appendChild(form);form.submit();form.remove();alert('已送出支援登記，謝謝你一起來陪孩子 💛\n稍後重新整理即可看到更新。');closeSupportModal();}catch(e){alert('送出時遇到問題，請稍後再試。');}}
+async function submitSupport(){if(!activeSupport)return;const name=document.getElementById('supportName').value.trim(),note=document.getElementById('supportNote').value.trim();if(!name){alert('請先輸入姓名喔！');return;}localStorage.setItem('eqVolunteerName',name);if(EQ_API_URL&&!apiSemesterVerified){alert('115 上班表連線尚未完成，為避免登記到舊學期，請稍後重新整理再試。');return;}if(!EQ_API_URL){alert('這是版面預覽：支援登記介面已完成。下一步接上 Apps Script 後，就會只把姓名寫入這一列的「協助1～3」欄位，不碰督導其他班表內容。');closeSupportModal();return;}try{const form=document.createElement('form');form.method='POST';form.action=EQ_API_URL;form.target='eqSubmitFrame';form.style.display='none';[['action','signup'],['sheet',activeSupport.sheet],['row',activeSupport.row],['name',name],['note',note]].forEach(([k,v])=>{const i=document.createElement('input');i.name=k;i.value=v;form.appendChild(i)});let frame=document.getElementById('eqSubmitFrame');if(!frame){frame=document.createElement('iframe');frame.name='eqSubmitFrame';frame.id='eqSubmitFrame';frame.style.display='none';document.body.appendChild(frame)}document.body.appendChild(form);form.submit();form.remove();alert('已送出支援登記，謝謝你一起來陪孩子 💛\n稍後重新整理即可看到更新。');closeSupportModal();}catch(e){alert('送出時遇到問題，請稍後再試。');}}
 </script>
 </body></html>
