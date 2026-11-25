@@ -34,3 +34,7 @@
 
 .finance-amount.expense { color:#246346; }
 .finance-amount.income { color:#812f32; }
+
+.volunteer-people { display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; margin:.35rem 0; }
+.volunteer-person { display:inline-flex; align-items:center; gap:.35rem; }
+.volunteer-person img { width:30px; height:30px; border-radius:50%; object-fit:cover; flex:none; }

@@ -31,7 +31,36 @@ function renderDashboard(data, request, refresh) {
   const sorted = rows => rows.filter(date).sort((a,b) => date(a).localeCompare(date(b)) || String(a.time).localeCompare(String(b.time), undefined, {numeric:true}));
   const classes = sorted(data.classes);
   const prep = sorted(data.prep);
-  const grade = row => Number(String(row.cls).match(/^\s*([1-6])/)?.[1]) || '一二三四五六'.indexOf(row.sheet?.[1]) + 1;
+  const grade = row => {
+    const match = String(row.sheet || '').match(/^\(([一二三四五六])上\)/);
+    return match ? '一二三四五六'.indexOf(match[1]) + 1 : Number(row.grade) || 0;
+  };
+  const gradeLabel = row => grade(row) ? '一二三四五六'[grade(row)-1] + '年級' : row.grade || '備課';
+  const person = name => {
+    const node = element('span', '', 'volunteer-person');
+    const key = String(name).replace(/[（(].*?[）)]/g, '').replace(/\s+/g, '');
+    const profile = data.profiles?.[key];
+    if (profile?.picture && /^https:\/\//.test(profile.picture)) {
+      const image = document.createElement('img');
+      image.src = profile.picture;
+      image.alt = '';
+      image.width = 30;
+      image.height = 30;
+      image.loading = 'lazy';
+      image.referrerPolicy = 'no-referrer';
+      image.onerror = () => image.remove();
+      node.append(image);
+    }
+    node.append(element('span',name));
+    return node;
+  };
+  const people = (label,names) => {
+    const node = element('div', '', 'volunteer-people');
+    node.append(element('span',label + '｜'));
+    if (!names.length) node.append(element('span','—'));
+    else names.forEach(name=>node.append(person(name)));
+    return node;
+  };
   const status = row => {
     if (row.main.length > 1) return ['enough',row.support.length ? '協助已足夠' : '雙主講'];
     if (!row.support.length) return ['need',grade(row) <= 2 ? '歡迎協助' : '需要協助'];
@@ -45,13 +74,13 @@ function renderDashboard(data, request, refresh) {
     const tile = element('div','','dash-date');
     tile.append(element('small', Number(month)+' 月'), element('strong', String(Number(day))),element('small', row.day || ''));
     const body = element('div','','dash-card-body');
-    body.append(element('h3',[row.cls || row.grade,row.unit || row.content].filter(Boolean).join('｜')),
+    body.append(element('h3',[gradeLabel(row),row.unit || row.content].filter(Boolean).join('｜')),
       element('p', [row.time,row.role].filter(Boolean).join(' · ')));
     if (row.main) {
       const [key,label] = status(row);
       body.append(element('span',label,'dash-badge '+key),
-        element('p','主講｜'+(row.main.join('、') || '—')),
-        element('p','協助｜'+(row.support.join('、') || '—')));
+        people('主講',row.main),
+        people('協助',row.support));
     }
     if (row.people) body.append(element('p',row.people));
     if (row.note) body.append(element('p',row.note,'dash-note'));
@@ -59,7 +88,7 @@ function renderDashboard(data, request, refresh) {
       const message = element('p');
       message.setAttribute('role','status');
       const register = button('我可以協助', async () => {
-        if (!window.confirm('確認登記協助 '+row.cls+'｜'+row.date+' '+row.time+'？')) return;
+        if (!window.confirm('確認登記協助 '+gradeLabel(row)+'｜'+row.date+' '+row.time+'？')) return;
         register.disabled = true;
         try {
           const result = await request('support',{sheet:row.sheet,row:row.row,unit:row.unit,date:row.date,time:row.time});
