@@ -127,10 +127,10 @@ async function initializeLogin() {
     } else {
       throw new Error('Unexpected login response');
     }
-  } catch {
+  } catch (error) {
     loginMessage.textContent = stage === 'line'
       ? 'LINE 登入無法初始化。請在 Chrome、Safari 或 LINE 中重新開啟。'
-      : 'LINE 已登入，暫時無法讀取志工資格或班表。';
+      : '班表載入失敗（' + (error.name || 'Error') + '）：' + error.message;
   }
 }
 
