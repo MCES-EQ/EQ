@@ -265,3 +265,4 @@ function appendFinance(section, finance, element) {
     section.append(details);
   }
 }
+
