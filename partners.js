@@ -84,6 +84,10 @@ async function initializeLogin() {
     };
     const openCenter = async () => showCenter(await request('dashboard', {deferFinance: true}));
     const dashboard = await request('dashboard', {deferFinance: true});
+    if (!dashboard.ok) {
+      loginMessage.textContent = '班表載入失敗：' + (dashboard.message || '後端未提供錯誤原因');
+      return;
+    }
     if (dashboard.ok && dashboard.data) {
       showCenter(dashboard);
       return;
