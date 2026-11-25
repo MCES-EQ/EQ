@@ -86,6 +86,15 @@ async function initializeLogin() {
     const dashboard = await request('dashboard', {deferFinance: true});
     if (!dashboard.ok) {
       loginMessage.textContent = '班表載入失敗：' + (dashboard.message || '後端未提供錯誤原因');
+      if (dashboard.message === 'LINE 登入驗證失敗') {
+        loginMessage.textContent = 'LINE 身分驗證未通過，請重新登入後再試。';
+        loginButton.textContent = '重新登入 LINE';
+        loginButton.hidden = false;
+        loginButton.onclick = () => {
+          liff.logout();
+          liff.login({redirectUri: new URL('partners.html', window.location.href).href});
+        };
+      }
       return;
     }
     if (dashboard.ok && dashboard.data) {
