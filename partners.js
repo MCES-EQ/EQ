@@ -1,4 +1,4 @@
-const partnerLogin = Object.freeze({ liffId: '2012514874-Xmecd90u', backendUrl: 'https://script.google.com/macros/s/AKfycbxCNouhuzF7mcahJF7GhbG4kc2O1bOIG9VroRIJD8Zs5cKYPXct6r6nrpkK5QaedBt2Cg/exec' });
+const partnerLogin = Object.freeze({ liffId: '2012514874-Xmecd90u', backendUrl: 'https://script.google.com/macros/s/AKfycbzxgAOY6tTzP0F0jJ19GBmAXlPRCKIl1KUp2gNZ1IescQBTRiG3AHffqWHTLJi-2Aml/exec' });
 const loginButton = document.querySelector('#line-login');
 const loginMessage = document.querySelector('#line-message');
 
